@@ -18,6 +18,7 @@ const Cards = () => {
   useEffect(() => {
 
     socket.on('connect', () => {
+      console.log('connected')
       setIsConnected(true);
     });
 
@@ -39,7 +40,6 @@ const Cards = () => {
     };
   }, []);
 
-  console.log(pilots);
   return (
     <div className='w-full flex flex-col justify-center items-center py-10'>
 
