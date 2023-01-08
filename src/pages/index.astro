@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Cards from '../components/Cards';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1 class="text-3xl text-center pt-10">PROJECT BIRDNEST</h1>
+		<Cards client:only="react" />
+	</main>
+</Layout>
+
